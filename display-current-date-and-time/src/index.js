@@ -11,11 +11,22 @@ const img3= "https://picsum.photos/300/300"
 const img4= "https://picsum.photos/350/300"
 const links= "https://github.com/Sgr1356"
 
+const heading={
+  color: "darkred",
+  textAlign: "center",
+  textTransform: "capitalize",
+  fontWeight: "bold",
+  textShadow: '0px 2px 4px #000000',
+  margin: '40px',
+};
+
 ReactDOM.render(
 <>
   {/* contentEditable="true"  is a JSX attribute like as html attribute*/ }
 
-  <h1 contentEditable="true" className="heading">Hello my Name is : {name}</h1>
+  {/* by inline css using javascript object*/}
+  <h1 contentEditable="true" style={heading}>Hello my Name is : {name}</h1>
+  {/* by external css */}
   <h1 className="heading">Today's Date is : {currdate}</h1>
   <h1 className="heading">Current Time is : {currtime}</h1>
   <div className="img-div">
