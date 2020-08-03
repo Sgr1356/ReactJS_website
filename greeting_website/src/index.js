@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import App from './App'
+import App,{website,foc} from './App'
 
 
 ReactDOM.render(
-  <App></App>,
+  <>
+  <App></App>
+  <ul>
+    <li>{website}</li>
+    <li>{foc}</li>
+  </ul>
+  </>,
   document.getElementById('root')
 );
 

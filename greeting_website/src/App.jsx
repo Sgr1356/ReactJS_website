@@ -27,4 +27,10 @@ function App () {
   )
 }
 
+const website = 'You are Making React Website good';
+const foc = 'So be Focused';
+
 export default App;
+
+export {website}
+export {foc}
