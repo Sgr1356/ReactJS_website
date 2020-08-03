@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 
 
 
+
 // ReactDOM.render('what to show','where to show','callback function');
 // this is JSX method to render data to browser 
 
@@ -46,10 +47,23 @@ import ReactDOM from 'react-dom';
 
 
 // React.Fragment use it because it doesnot take extra div itslef  ctrl+shift+j
+// ReactDOM.render(
+//  <React.Fragment>
+//     <h1>Hello world</h1>
+//     <p>My self Sagar Yadav</p>
+// </React.Fragment>,
+//     document.getElementById('root')
+// );
+
+
+// this is react components 
+
+import App from './App.jsx'
 ReactDOM.render(
- <React.Fragment>
-    <h1>Hello world</h1>
-    <p>My self Sagar Yadav</p>
-</React.Fragment>,
+    <>
+        <App></App>
+        <p>Now Your are Precious </p>
+       
+    </>,
     document.getElementById('root')
-);
+);  
