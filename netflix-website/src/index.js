@@ -7,7 +7,9 @@ import Sdata from './Sdata';
 
 function ncard(val){
   return(
-    <Card imgscrc={val.imgscrc}
+    <Card 
+    key={val.id}
+    imgscrc={val.imgscrc}
     title={val.title}
     sname={val.sname}
     link={val.link}
@@ -20,7 +22,7 @@ ReactDOM.render(
   <>
     <h1 className="heading_styles">List of top 4 Netflix in 2020</h1>
     
- { Sdata.map(ncard) };
+ { Sdata.map(ncard) }
 
   </>,
   document.getElementById('root')
